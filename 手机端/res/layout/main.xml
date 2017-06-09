@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:theme="@android:style/ThemeOverlay.Material.Dark"
+    >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+        	<LinearLayout
+        	    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal">
+        	    <TextView
+        	    android:id="@+id/PeakValue_Text"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="@string/PeakTip" />
+				<TextView
+	        	    android:id="@+id/AverageValue_Text"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:text="@string/AverageTip" />
+        	</LinearLayout>
+        	
+			<com.test.BTClient.Scope
+			    android:id="@+id/ScopeView_View"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_gravity="top"
+			    android:contentDescription="@string/img" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+		<EditText  
+			android:id="@+id/Edit0" 
+			android:layout_width="0dp" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="bottom"
+			android:hint="@string/EditText_Hint"
+			android:enabled="false">
+		</EditText>
+		<Button 
+			android:text="@string/Button_Send_Name" 
+			android:id="@+id/Button_Send_View" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:onClick="onSendButtonClicked"
+			android:enabled="false">
+		</Button>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"      
+        >
+       	<Button style="?android:attr/buttonBarButtonStyle"
+			android:text="@string/Button_Connect_Name" 
+			android:id="@+id/Button_Connect_View" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+		</Button>
+		<Button style="?android:attr/buttonBarButtonStyle"
+			android:text="@string/Button_Save_Name" 
+			android:id="@+id/Button_Save_View" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:enabled="false">
+		</Button>
+		<Button style="?android:attr/buttonBarButtonStyle"
+			android:text="@string/Button_Clear_Name" 
+			android:id="@+id/Button_Clear_View" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:enabled="false">
+		</Button>
+		<Button style="?android:attr/buttonBarButtonStyle"
+			android:text="@string/Button_Exit_Name" 
+			android:id="@+id/Button_Exit_View" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			>
+		</Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BTClient!</string>
+    <string name="app_name">手机示波器</string>
+    <string name="Button_Clear_Name">清空</string>
+    <string name="Button_Connect_Name">连接</string>
+    <string name="Button_Save_Name">保存</string>
+    <string name="Button_Exit_Name">退出</string>
+    <string name="Button_Send_Name">发送</string>
+	<string name="UnPairred_Device">未配对设备</string>
+    <string name="Scan">查找设备</string>
+    <string name="Cancel">取消</string>
+    <string name="PleaseInputFileName">请输入保存的文件名</string>
+    <string name="EditText_Hint">请输入命令</string>
+    <string name="EditText_SaveFile_Hint">请输入文件名</string>
+    <string name="img">图形</string>
+    <string name="PeakTip">峰值:</string>
+    <string name="AverageTip">均值:</string>
+    <string name="about_string">关于</string>
+</resources>
